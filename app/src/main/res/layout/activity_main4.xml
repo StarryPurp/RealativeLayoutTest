@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/text_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Phone Number:"
+    android:textSize="20sp"
+    android:layout_alignBaseline="@+id/edit_1" />
+    <EditText
+        android:id="@+id/edit_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_1"
+        android:hint="000-0000-0000"/>
+    <Button
+        android:id="@+id/cancel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:layout_below="@+id/edit_1"
+        android:layout_alignParentRight="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ok"
+        android:id="@+id/button"
+        android:layout_below="@+id/edit_1"
+        android:layout_toLeftOf="@+id/cancel1" />
+
+</RelativeLayout>
